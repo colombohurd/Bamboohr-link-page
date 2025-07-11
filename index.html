@@ -1,33 +1,48 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Redirecting to BambooHR...</title>
   <meta charset="UTF-8" />
+  <title>Redirecting to BambooHR...</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to right, #004e92, #000428); /* dark blue gradient */
-      color: #ffffff;
-      text-align: center;
-      padding-top: 100px;
+      font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
     }
 
-    .card {
-      background: rgba(255, 255, 255, 0.1);
-      padding: 30px;
-      margin: auto;
+    .container {
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
       border-radius: 12px;
-      max-width: 400px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+      padding: 40px;
+      max-width: 500px;
+      margin: 100px auto;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    h2 {
+      color: #00b14f;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #1d1d1f;
+      font-size: 16px;
     }
 
     a {
-      color: #00d8ff;
-      text-decoration: underline;
+      color: #00b14f;
+      text-decoration: none;
       font-weight: bold;
     }
-  </style>
 
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
   <script>
     window.onload = function () {
       window.open("https://colombohurd.bamboohr.com/", "_blank");
@@ -35,9 +50,9 @@
   </script>
 </head>
 <body>
-  <div class="card">
+  <div class="container">
     <h2>Redirecting to BambooHR...</h2>
-    <p>If nothing happens, <a href="https://colombohurd.bamboohr.com/" target="_blank">click here to open it manually</a>.</p>
+    <p>If you're not redirected, <a href="https://colombohurd.bamboohr.com/" target="_blank">click here</a>.</p>
   </div>
 </body>
 </html>
