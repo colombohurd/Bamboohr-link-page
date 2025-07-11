@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Redirecting to BambooHR...</title>
-    <script>
-      window.onload = function () {
-        // Open BambooHR in a new browser tab
-        window.open("https://colombohurd.bamboohr.com/", "_blank");
-      };
-    </script>
-    <style>
-      body {
-        font-family: sans-serif;
-        text-align: center;
-        padding-top: 50px;
-      }
-    </style>
-  </head>
-  <body>
+<head>
+  <title>Redirecting to BambooHR...</title>
+  <meta charset="UTF-8" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #004e92, #000428); /* dark blue gradient */
+      color: #ffffff;
+      text-align: center;
+      padding-top: 100px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      margin: auto;
+      border-radius: 12px;
+      max-width: 400px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    a {
+      color: #00d8ff;
+      text-decoration: underline;
+      font-weight: bold;
+    }
+  </style>
+
+  <script>
+    window.onload = function () {
+      window.open("https://colombohurd.bamboohr.com/", "_blank");
+    };
+  </script>
+</head>
+<body>
+  <div class="card">
     <h2>Redirecting to BambooHR...</h2>
-    <p>If nothing happens, <a href="https://colombohurd.bamboohr.com/" target="_blank">click here</a>.</p>
-  </body>
+    <p>If nothing happens, <a href="https://colombohurd.bamboohr.com/" target="_blank">click here to open it manually</a>.</p>
+  </div>
+</body>
 </html>
