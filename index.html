@@ -9,36 +9,41 @@
       background-color: #f9f9f9;
       margin: 0;
       padding: 0;
+      text-align: center;
+      padding-top: 100px;
     }
 
     .container {
       background-color: #ffffff;
       border: 1px solid #e0e0e0;
       border-radius: 12px;
-      padding: 40px;
+      padding: 0; /* Remove padding since image fills container */
       max-width: 500px;
-      margin: 100px auto;
+      margin: 0 auto;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      text-align: center;
+      overflow: hidden; /* prevent overflow from rounded corners */
     }
 
-    img {
-      max-width: 200px;
-      margin-bottom: 20px;
+    .container img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 12px 12px 0 0;
     }
 
-    p {
+    .redirect-text {
+      margin-top: 20px;
       color: #1d1d1f;
       font-size: 16px;
     }
 
-    a {
+    .redirect-text a {
       color: #00b14f;
       text-decoration: none;
       font-weight: bold;
     }
 
-    a:hover {
+    .redirect-text a:hover {
       text-decoration: underline;
     }
   </style>
@@ -51,6 +56,8 @@
 <body>
   <div class="container">
     <img src="BambooHRPage.png" alt="Redirecting to BambooHR" />
+  </div>
+  <div class="redirect-text">
     <p>If you're not redirected, <a href="https://colombohurd.bamboohr.com/" target="_blank">click here</a>.</p>
   </div>
 </body>
