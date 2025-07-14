@@ -6,22 +6,25 @@
   <style>
     body {
       font-family: "Segoe UI", "Helvetica Neue", sans-serif;
-      background-color: #f9f9f9;
+      background: url('BambooHRBackground.jpg') no-repeat center center fixed;
+      background-size: cover;
       margin: 0;
       padding: 0;
       text-align: center;
-      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
     }
 
     .container {
-      background-color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.95);
       border: 1px solid #e0e0e0;
       border-radius: 12px;
-      padding: 0; /* Remove padding since image fills container */
       max-width: 500px;
-      margin: 0 auto;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      overflow: hidden; /* prevent overflow from rounded corners */
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
     }
 
     .container img {
